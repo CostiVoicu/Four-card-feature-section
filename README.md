@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL here](https://your-solution-url.com)
-- Live Site URL: [live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/responsive-site-using-sass-and-flex-box-YtOEhALaV)
+- Live Site URL: [live site URL here](https://costivoicu.github.io/Four-card-feature-section/)
 
 ## My process
 
