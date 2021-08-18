@@ -1,0 +1,97 @@
+@import './variables';
+
+html, body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+body{
+    font-size: $font-size;
+    font-family: $font-family;
+    color: $neutral-color-very-dark-blue;
+    background-color: $neutral-color-very-light-gray;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5em 2em;
+    @media (min-width: $desktop-size){
+        padding: 2.5em 2em;
+    }
+}
+.header{
+    text-align: center;
+    &__title{
+        font-weight: $small-weight;
+        font-size: $font-size + 10px;
+        max-width: 410px;
+        @media (min-width: $desktop-size){
+            font-size: $font-size + 20px;
+            max-width: 500px;
+        }
+        &__highlight{
+            font-weight: $big-weight;
+        }
+    }
+}
+.paragraph{
+    text-align: center;
+    .text{
+        font-size: $font-size + 1px;
+        max-width: 331px;
+        @media (min-width: $desktop-size){
+            max-width: 540px;
+            padding-bottom: 1.5rem;
+        }
+    }
+}
+.cards{
+    @media (min-width: $desktop-size){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .column1{
+        @media (min-width: $desktop-size) {
+            padding: 0 2rem;
+        }
+        .card1{
+            border-top: $primary-color-cyan solid 5px;
+        }
+        .card4{
+            border-top: $primary-color-blue solid 5px;
+        }
+    }
+    .column2{
+        .card2{
+            border-top: $primary-color-red solid 5px;
+        }
+        .card3{
+            border-top: $primary-color-orange solid 5px;
+        }
+    }
+    .card{
+        position: relative;
+        width: 280px;
+        height: 200px;
+        background-color: white;
+        margin: 1.5rem 0rem;
+        padding: 1rem;
+        box-shadow: 1px 10px 10px 0.01px rgb(199, 199, 199);
+        border-radius: 0.5em;
+        max-width: 400px;
+        @media (min-width: $desktop-size){
+            width: 320px;
+        height: 210px;
+        }
+    }
+    .card_image{
+        position: absolute;
+        right: 2rem;
+    }
+}
+.text{
+    color: $neutral-color-grayish-blue;
+}
